@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1>Trinkgeldrechner</h1>
+            <!-- <form action="" onsubmit="return false"> -->
+            <p> Wie hoch ist die Rechnung?</p>
+            <input type="number" name="bill" id="billAmount">
+            <p>Wie viele Menschen teilen sich die Rechnung</p>
+            <input type="number" name="nPeople" id="nPeople">
+
+            <select id="service">
+                <option disabled selected value="0">Wie war der service?</option>
+                <option value="1"> Schlecht</option>
+                <option value="2">OK</option>
+                <option value="3">Super</option>
+            </select>
+            <input type="submit" value="Berechne" onclick="calcTip()">
+            <!-- </form> -->
+            <div class="text" id="result">
+
+            </div>
+        </article>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
